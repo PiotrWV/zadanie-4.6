@@ -1,0 +1,238 @@
+/* GLOBAL */
+
+$color-main: #34495e;
+$color-text: #ecf0f1;
+$font-header:'Libre Baskerville',
+serif;
+$font-text: 'Source Sans Pro',
+sans-serif;
+$transition: all 1s;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+section {
+
+    padding: 108px 0;
+}
+
+body {
+
+    margin: 0;
+    text-align: center;
+    background: #ecf0f1;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $font-text;
+
+}
+
+.btn {
+
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro',
+        sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    background-position: 100% 0;
+    background-size: 300%;
+    transition: $transition;
+}
+
+.btn:hover {
+
+    background-position: 0 100%;
+    color: #fff;
+
+}
+
+.btn-one {
+
+    border-color: #33d9b2;
+    color: #33d9b2;
+    background-image: linear-gradient(90deg, #33d9b2 50%, transparent 50%);
+
+}
+
+/* NAVIAGATION */
+
+.navigation {
+
+
+    padding-top: 12px;
+    margin-bottom: 0;
+
+
+}
+
+.navigation ul {
+
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+}
+
+.navigation li {
+
+    display: inline-block;
+    margin-right: 36px;
+    position: relative;
+
+}
+
+.navigation a {
+
+    text-decoration: none;
+    color: #34495e;
+
+}
+
+li :hover {
+
+    color: #33d9b2;
+
+}
+
+
+
+/* Splash */
+
+.splash {
+
+    height: 100vh;
+    position: relative;
+    background-image: url(https://images.pexels.com/photos/326518/pexels-photo-326518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+.splash-inner {
+
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.page-title {
+
+    color: #f9ca24 font-size: 50px;
+    font-family: serif;
+    margin-top: 30px;
+    position: relative;
+    font-family: "Libre Baskerville", serif;
+
+}
+
+.page-subbtitle {
+
+    color: #f9ca24 font-size: 30px;
+    margin-top: 20px;
+}
+
+
+/* SERVICES */
+
+.service {
+
+    color: black;
+
+}
+
+.services-wrapper {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #57606f;
+}
+
+.services-wrapper box {
+
+    flex: 0 0 33.333%;
+    position: relative;
+
+}
+
+.box i {
+
+    font-size: 30px;
+    color: #33d9b2;
+}
+
+/* PORTFOLIO */
+
+
+.wrapper {
+
+    width: auto;
+    margin: 100px 0;
+}
+
+.wrapper .wrapper-box {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.wrapper .wrapper-box .portfolio-img {
+
+    width: 280px;
+    height: 280px;
+    cursor: pointer;
+
+
+}
+
+.wrapper .wrapper-box .portfolio-img img {
+
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+
+}
+
+
+/* FOOTER */
+
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+footer li {
+
+    font-size: 0;
+
+}
+
+footer li i {
+
+    font-size: 30px;
+    color: black;
+}
