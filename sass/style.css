@@ -181,38 +181,53 @@ li :hover {
 
 /* PORTFOLIO */
 
-
-.wrapper {
-
-    width: auto;
-    margin: 100px 0;
+.wrapper-box-left,
+.wrapper-box-right {
+    position: relative;
 }
 
-.wrapper .wrapper-box {
+.portfolio-img {
 
-    display: flex;
-    justify-content: center;
-
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
 }
 
+.portfolio-img img {
 
-.wrapper .wrapper-box .portfolio-img {
-
-    width: 280px;
-    height: 280px;
-    cursor: pointer;
-
-
-}
-
-.wrapper .wrapper-box .portfolio-img img {
-
+    display: block;
     width: 100%;
     height: 100%;
-    flex-direction: row;
-
+    object-fit: cover;
 }
 
+.wrapper-box-right .portfolio-img {
+
+    right: 0;
+}
+
+.wrapper-box-right .portfolio-description {
+
+    padding: 35px 55% 36px 0;
+    text-align: right;
+}
+
+.wrapper-box-left .portfolio-description {
+
+    padding: 36px 0 36px 55%;
+    text-align: left;
+}
+
+.portfolio-img img:hover {
+
+    transform: scale(1.2);
+}
+
+.portfolio-img img {
+
+    transition: all 1s;
+}
 
 /* FOOTER */
 
@@ -222,6 +237,16 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: row;
+
+
+
+}
+
+footer ul {
+
+    display: flex;
+    flex-direction: row;
+
 
 }
 
