@@ -135,12 +135,18 @@ li :hover {
 
 .page-title {
 
-    color: #f9ca24 font-size: 50px;
+    color: #273c75 font-size: 50px;
     font-family: serif;
     margin-top: 30px;
     position: relative;
     font-family: "Libre Baskerville", serif;
 
+}
+
+.page-title h1 {
+
+    color: #273c75 font-size: 50px;
+    font-family: serif;
 }
 
 .page-subbtitle {
@@ -179,55 +185,37 @@ li :hover {
     color: #33d9b2;
 }
 
-/* PORTFOLIO */
 
-.wrapper-box-left,
-.wrapper-box-right {
-    position: relative;
+/* GALLERY */
+
+.gallery {
+
+    justify-content: center;
+    padding-top: 0px;
 }
 
-.portfolio-img {
-
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.portfolio-img img {
+.gallery .container .box {
 
     display: block;
+    float: left;
+    width: 20%;
+    padding-left: 12px;
+
+}
+
+img {
+
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    border-radius: 5px;
+
 }
 
-.wrapper-box-right .portfolio-img {
+img:hover {
 
-    right: 0;
+    transform: scale(2, 2);
+    transition: 1s transform;
 }
 
-.wrapper-box-right .portfolio-description {
-
-    padding: 35px 55% 36px 0;
-    text-align: right;
-}
-
-.wrapper-box-left .portfolio-description {
-
-    padding: 36px 0 36px 55%;
-    text-align: left;
-}
-
-.portfolio-img img:hover {
-
-    transform: scale(1.2);
-}
-
-.portfolio-img img {
-
-    transition: all 1s;
-}
 
 /* FOOTER */
 
@@ -237,6 +225,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    margin-top: 100px;
 
 
 
