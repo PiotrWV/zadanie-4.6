@@ -183,6 +183,7 @@ li :hover {
 
     font-size: 30px;
     color: #33d9b2;
+
 }
 
 
@@ -190,16 +191,20 @@ li :hover {
 
 .gallery {
 
-    justify-content: center;
     padding-top: 0px;
+
 }
 
-.gallery .container .box {
+.gallery .container-gallery {
 
-    display: block;
-    float: left;
+    display: flex;
+    justify-content: center;
+
+}
+
+.gallery .container-gallery .box {
+
     width: 20%;
-    padding-left: 12px;
 
 }
 
